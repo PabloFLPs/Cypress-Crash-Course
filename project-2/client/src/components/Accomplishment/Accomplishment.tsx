@@ -27,7 +27,7 @@ function Accomplishment() {
                 title,
                 accomplishment
             });
-        } catch (error) {
+        } catch (error:any) {
             setErrorMsg(error.response.data.msg)
             setShowError(true)
             return
@@ -91,7 +91,7 @@ function Accomplishment() {
                         <div>
                             <div className="Accomplishment-spinner-container">
                                 <img src={confetti} className="Accomplishment-img"/> 
-                                <h1>This Accomplisment was Successfully Submitted</h1> 
+                                <h1>This Accomplishment was Successfully Submitted</h1> 
                             </div>
                             <button className="Accomplishment-btn" onClick={() => {
                                 setShowSuccess(false);

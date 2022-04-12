@@ -17,7 +17,7 @@ app.post("/", (req, res) => {
     }
 
     return res.json({
-        msg: "Accomplisment sent"
+        msg: "Accomplishment sent"
     })
 
 });
